@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+int main()
+{
+	//What is the size of int types?
+	printf("int:	 	    %d bytes \n", sizeof(int));
+	printf("unsigned int:       %d bytes \n", sizeof(unsigned int));
+	printf("long int:           %d bytes \n", sizeof(long int));
+	printf("unsigned short int: %d bytes \n", sizeof(unsigned short int));
+	printf("unsigned long int:  %d bytes \n ", sizeof(unsigned long int));
+
+	//What is the size of char types?	
+	printf("char:                %ld bytes \n", sizeof(char));	
+	printf("unsigned char:       %ld bytes \n", sizeof(unsigned char));	
+
+	//What is the size of float types?
+	printf("float:		   %lu bytes \n", sizeof(float));
+	printf("double:	           %lu bytes \n", sizeof(double));
+	printf("long double:       %lu bytes \n", sizeof(long double));
+
+	//What is the size of boolean?
+	printf("bolean True:      %d bytes \n", sizeof(true));
+	printf("bolean False:     %d bytes \n", sizeof(false));
+
+	//What is the size of void ?	
+	printf("void:             %d bytes \n", sizeof(void));
+
+	//What is the size of my name Fathi?
+	char n[]= "Fathi Mohammed Saeed AlQadasi";
+	printf("Fathi Mohammed Saeed size:       %d bytes \n", sizeof(n));
+	return 0;
+}
